@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul PPKn XI — Demokrasi Pancasila</title>
+<style>
+:root{
+ --navy:#123b75;--blue:#1d5fa7;--gold:#d8a928;--bg:#f4f7fb;
+ --card:#fff;--text:#172033;--muted:#667085;--line:#e5e7eb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{max-width:1180px;margin:auto;padding:13px 20px;display:flex;align-items:center;gap:20px}
+.logo{font-size:20px;font-weight:800;color:var(--navy);white-space:nowrap}.logo span{color:var(--gold)}
+nav{margin-left:auto;display:flex;gap:5px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--text);font-size:14px;padding:8px 10px;border-radius:9px}
+nav a:hover{background:#edf4ff;color:var(--navy)}
+.hero{background:linear-gradient(135deg,#0d2f5f,#1c63a8);color:white}
+.hero-inner{max-width:1180px;margin:auto;padding:65px 20px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:30px;font-size:13px;font-weight:700}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:16px 0}
+.hero p{font-size:18px;color:#e5eef9;max-width:700px}
+.btn{display:inline-block;margin-top:12px;padding:12px 18px;background:#fff;color:var(--navy);font-weight:800;border-radius:10px;text-decoration:none}
+.illustration{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:25px;padding:18px}
+.container{max-width:1180px;margin:auto;padding:52px 20px}
+.section-head{margin-bottom:25px}.section-head h2{margin:0;font-size:32px;color:var(--navy)}
+.section-head p{color:var(--muted);max-width:750px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 7px 22px rgba(16,24,40,.05)}
+.card h3{margin:10px 0 7px;color:var(--navy)}.card p{color:#536071;margin:0}
+.icon{width:48px;height:48px;border-radius:13px;background:#edf4ff;display:grid;place-items:center;font-size:24px}
+.lesson{display:grid;grid-template-columns:270px 1fr;gap:24px;margin-bottom:28px}
+.visual{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;height:max-content;position:sticky;top:85px}
+.content{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}
+.content h3{font-size:27px;color:var(--navy);margin-top:0}
+.content h4{color:#285589;margin-bottom:5px}
+.content ul{padding-left:22px}
+.definition,.case,.note{padding:17px 19px;border-radius:12px;margin:18px 0}
+.definition{background:#edf4ff;border-left:5px solid var(--blue)}
+.case{background:#f7f7f8;border-left:5px solid var(--gold)}
+.note{background:#fff8df;border-left:5px solid var(--gold)}
+.glossary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.term{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px}.term strong{color:var(--navy)}
+.reflection{counter-reset:item;display:grid;gap:15px}
+.question{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px 22px}
+.question strong{display:block;color:var(--navy);font-size:17px;margin-bottom:5px}
+footer{background:#10243f;color:#dbe7f5;text-align:center;padding:35px 20px}
+footer strong{color:#fff}
+@media(max-width:850px){.hero-inner,.lesson{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.visual{position:static}}
+@media(max-width:570px){nav{display:none}.grid,.glossary{grid-template-columns:1fr}.container{padding:40px 15px}.hero-inner{padding:50px 15px}.content{padding:21px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">PPKn <span>XI</span></div>
+<nav>
+<a href="#beranda">Beranda</a>
+<a href="#tujuan">Tujuan</a>
+<a href="#materi">Materi</a>
+<a href="#glosarium">Glosarium</a>
+<a href="#refleksi">Refleksi</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="beranda">
+<div class="hero-inner">
+<div>
+<span class="badge">MODUL PEMBELAJARAN PPKn KELAS XI</span>
+<h1>Demokrasi<br>Pancasila</h1>
+<p>Modul pembelajaran interaktif untuk memahami prinsip, nilai, musyawarah, partisipasi, dan penerapan Demokrasi Pancasila dalam kehidupan sehari-hari.</p>
+<a class="btn" href="#tujuan">Mulai Belajar ↓</a>
+</div>
+<div class="illustration">
+<svg viewBox="0 0 500 350" width="100%" aria-label="Ilustrasi demokrasi Pancasila">
+<rect width="500" height="350" rx="22" fill="#eaf2ff"/>
+<circle cx="250" cy="175" r="105" fill="white"/>
+<path d="M150 205h200" stroke="#d8a928" stroke-width="9" stroke-linecap="round"/>
+<path d="M175 205V125h150v80" fill="none" stroke="#123b75" stroke-width="8"/>
+<path d="M160 125l90-50 90 50z" fill="#123b75"/>
+<circle cx="205" cy="160" r="18" fill="#1d5fa7"/>
+<circle cx="250" cy="160" r="18" fill="#d8a928"/>
+<circle cx="295" cy="160" r="18" fill="#1d5fa7"/>
+<path d="M205 205v30M250 205v30M295 205v30" stroke="#123b75" stroke-width="8"/>
+<text x="250" y="285" text-anchor="middle" font-size="22" font-weight="bold" fill="#123b75">RAKYAT • MUSYAWARAH • TANGGUNG JAWAB</text>
+</svg>
+</div>
+</div>
+</section>
+
+<section class="container" id="tujuan">
+<div class="section-head">
+<h2>Tujuan Pembelajaran</h2>
+<p>Setelah mempelajari bab ini, peserta didik diharapkan mampu memahami konsep demokrasi dan menerapkannya secara bertanggung jawab.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>Memahami</h3><p>Menjelaskan pengertian dan prinsip-prinsip Demokrasi Pancasila.</p></div>
+<div class="card"><div class="icon">02</div><h3>Menganalisis</h3><p>Menganalisis penerapan demokrasi dalam kehidupan sekolah, masyarakat, dan negara.</p></div>
+<div class="card"><div class="icon">03</div><h3>Menerapkan</h3><p>Menunjukkan sikap bertanggung jawab, menghargai perbedaan, dan mengutamakan kepentingan bersama.</p></div>
+</div>
+</section>
+
+<section class="container" id="materi">
+<div class="section-head">
+<h2>Ringkasan Materi</h2>
+<p>Pelajari materi secara bertahap. Setiap bagian dilengkapi penjelasan dan contoh kasus sehari-hari.</p>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#edf4ff"/>
+<circle cx="135" cy="82" r="55" fill="#fff"/>
+<text x="135" y="95" text-anchor="middle" font-size="58">🇮🇩</text>
+<text x="135" y="155" text-anchor="middle" font-size="16" font-weight="bold" fill="#123b75">DEMOKRASI</text>
+</svg>
+</div>
+<div class="content">
+<h3>1. Pengertian Demokrasi Pancasila</h3>
+<p>Demokrasi adalah sistem kehidupan bernegara yang memberikan kesempatan kepada rakyat untuk berpartisipasi dalam proses penyelenggaraan negara.</p>
+<p><b>Demokrasi Pancasila</b> adalah demokrasi yang pelaksanaannya berlandaskan nilai-nilai Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</p>
+<div class="definition"><b>Inti konsep:</b> kebebasan dalam demokrasi harus disertai tanggung jawab, penghormatan terhadap hak orang lain, serta perhatian terhadap kepentingan bersama.</div>
+<div class="case"><b>Contoh sehari-hari:</b> ketika kelas memilih ketua kelas, siswa diberi kesempatan memilih sesuai aturan. Setelah keputusan dibuat, semua siswa menghormati hasilnya.</div>
+</div>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#fff8df"/>
+<circle cx="135" cy="75" r="48" fill="#fff"/>
+<path d="M75 125h120M135 25v100" stroke="#123b75" stroke-width="8"/>
+<path d="M95 55h80" stroke="#d8a928" stroke-width="9" stroke-linecap="round"/>
+<text x="135" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#123b75">NILAI DEMOKRASI</text>
+</svg>
+</div>
+<div class="content">
+<h3>2. Prinsip-Prinsip Demokrasi Pancasila</h3>
+<ul>
+<li><b>Kedaulatan rakyat:</b> rakyat memiliki peran penting dalam kehidupan bernegara.</li>
+<li><b>Persamaan:</b> warga negara memiliki kedudukan yang sama sesuai hukum.</li>
+<li><b>Musyawarah:</b> persoalan bersama dibahas untuk memperoleh keputusan yang dapat dipertanggungjawabkan.</li>
+<li><b>Penghormatan terhadap hak:</b> setiap orang harus menghormati hak orang lain.</li>
+<li><b>Tanggung jawab:</b> kebebasan tidak berarti bertindak tanpa memperhatikan aturan.</li>
+</ul>
+<div class="case"><b>Contoh:</b> dalam rapat organisasi siswa, setiap anggota menyampaikan pendapat secara tertib, mendengarkan anggota lain, lalu keputusan dibuat melalui mekanisme yang disepakati.</div>
+</div>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#edf8f1"/>
+<circle cx="135" cy="82" r="48" fill="#fff"/>
+<circle cx="108" cy="82" r="15" fill="#123b75"/>
+<circle cx="162" cy="82" r="15" fill="#1d5fa7"/>
+<path d="M75 135h120" stroke="#d8a928" stroke-width="10" stroke-linecap="round"/>
+<text x="135" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#123b75">MUSYAWARAH</text>
+</svg>
+</div>
+<div class="content">
+<h3>3. Musyawarah dalam Demokrasi</h3>
+<p>Musyawarah adalah proses membahas persoalan secara bersama-sama dengan mempertimbangkan berbagai pendapat untuk mendapatkan keputusan yang baik.</p>
+<h4>Sikap dalam musyawarah</h4>
+<ul>
+<li>Mendengarkan pendapat orang lain.</li>
+<li>Tidak memaksakan kehendak.</li>
+<li>Menghargai perbedaan pendapat.</li>
+<li>Menyampaikan pendapat dengan sopan.</li>
+<li>Mengutamakan kepentingan bersama.</li>
+<li>Melaksanakan keputusan yang telah disepakati sesuai aturan.</li>
+</ul>
+<div class="case"><b>Contoh kasus:</b> kelas memiliki dana untuk kegiatan bersama. Ada usulan kegiatan sosial dan ada usulan membeli perlengkapan kelas. Siswa membahas kedua pilihan dan mempertimbangkan kebutuhan bersama sebelum mengambil keputusan.</div>
+</div>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#edf4ff"/>
+<rect x="60" y="45" width="150" height="90" rx="12" fill="#fff" stroke="#123b75" stroke-width="6"/>
+<circle cx="95" cy="90" r="13" fill="#d8a928"/><circle cx="135" cy="90" r="13" fill="#1d5fa7"/><circle cx="175" cy="90" r="13" fill="#d8a928"/>
+<text x="135" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#123b75">DEMOKRASI SEKOLAH</text>
+</svg>
+</div>
+<div class="content">
+<h3>4. Demokrasi di Lingkungan Sekolah</h3>
+<p>Demokrasi dapat dipraktikkan melalui kegiatan sederhana yang melatih siswa menjadi warga negara aktif dan bertanggung jawab.</p>
+<ul>
+<li>Pemilihan ketua kelas.</li>
+<li>Pemilihan pengurus organisasi siswa.</li>
+<li>Diskusi dan kerja kelompok.</li>
+<li>Rapat kelas.</li>
+<li>Penyusunan kesepakatan kelas.</li>
+<li>Menyampaikan kritik dan saran secara santun.</li>
+</ul>
+<div class="note"><b>Nilai yang dilatih:</b> partisipasi, tanggung jawab, toleransi, kepemimpinan, dan penghormatan terhadap keputusan bersama.</div>
+</div>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#fff3f3"/>
+<circle cx="135" cy="80" r="48" fill="#fff"/>
+<path d="M100 80h70M135 45v70" stroke="#123b75" stroke-width="8"/>
+<path d="M80 130h110" stroke="#d8a928" stroke-width="10" stroke-linecap="round"/>
+<text x="135" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#123b75">MASYARAKAT</text>
+</svg>
+</div>
+<div class="content">
+<h3>5. Demokrasi dalam Kehidupan Masyarakat</h3>
+<p>Dalam masyarakat, demokrasi diwujudkan melalui partisipasi, musyawarah, penghormatan terhadap perbedaan, dan kepatuhan terhadap keputusan yang sah.</p>
+<ul>
+<li>Mengikuti kegiatan masyarakat.</li>
+<li>Menghormati keputusan bersama.</li>
+<li>Mengikuti musyawarah lingkungan.</li>
+<li>Menyampaikan aspirasi secara santun.</li>
+<li>Menghargai perbedaan pendapat.</li>
+</ul>
+<div class="case"><b>Contoh kasus:</b> warga ingin menentukan jadwal kerja bakti. Karena terdapat beberapa usulan, warga membahasnya bersama dan menentukan jadwal berdasarkan kesepakatan.</div>
+</div>
+</div>
+
+<div class="lesson">
+<div class="visual">
+<svg viewBox="0 0 270 190" width="100%">
+<rect width="270" height="190" rx="16" fill="#edf4ff"/>
+<rect x="75" y="35" width="120" height="110" rx="18" fill="#123b75"/>
+<rect x="88" y="52" width="94" height="68" rx="9" fill="#fff"/>
+<path d="M105 78h60M105 94h42" stroke="#1d5fa7" stroke-width="7"/>
+<circle cx="135" cy="132" r="6" fill="#d8a928"/>
+<text x="135" y="165" text-anchor="middle" font-size="15" font-weight="bold" fill="#123b75">RUANG DIGITAL</text>
+</svg>
+</div>
+<div class="content">
+<h3>6. Demokrasi di Era Digital</h3>
+<p>Teknologi membuat masyarakat semakin mudah menyampaikan pendapat. Kebebasan di ruang digital tetap perlu disertai tanggung jawab.</p>
+<ul>
+<li>Memeriksa kebenaran informasi sebelum membagikannya.</li>
+<li>Menghindari penyebaran informasi palsu.</li>
+<li>Menggunakan bahasa yang sopan.</li>
+<li>Menghormati perbedaan pendapat.</li>
+<li>Tidak melakukan perundungan digital.</li>
+<li>Tidak menyebarkan data pribadi orang lain tanpa izin.</li>
+</ul>
+<div class="case"><b>Contoh kasus:</b> seorang siswa menerima berita dari grup pesan yang belum diketahui kebenarannya. Ia memeriksa sumber terlebih dahulu sebelum meneruskannya kepada orang lain.</div>
+</div>
+</div>
+</section>
+
+<section class="container" id="glosarium">
+<div class="section-head"><h2>Glosarium</h2><p>Istilah penting yang perlu dipahami dalam bab Demokrasi Pancasila.</p></div>
+<div class="glossary">
+<div class="term"><strong>Demokrasi</strong><br>Sistem kehidupan bernegara yang memberi ruang bagi rakyat untuk berpartisipasi.</div>
+<div class="term"><strong>Demokrasi Pancasila</strong><br>Demokrasi yang berlandaskan nilai Pancasila dan konstitusi Indonesia.</div>
+<div class="term"><strong>Musyawarah</strong><br>Proses pembahasan bersama untuk mencari keputusan.</div>
+<div class="term"><strong>Mufakat</strong><br>Kesepakatan yang dicapai melalui proses pembahasan atau musyawarah.</div>
+<div class="term"><strong>Kedaulatan rakyat</strong><br>Prinsip bahwa rakyat memiliki peran penting dalam penyelenggaraan negara.</div>
+<div class="term"><strong>Konstitusi</strong><br>Hukum dasar yang menjadi landasan penyelenggaraan negara.</div>
+<div class="term"><strong>Partisipasi</strong><br>Keikutsertaan seseorang atau kelompok dalam kegiatan atau proses.</div>
+<div class="term"><strong>Toleransi</strong><br>Sikap menghargai perbedaan dengan tetap memperhatikan aturan.</div>
+<div class="term"><strong>Aspirasi</strong><br>Pendapat, keinginan, atau harapan yang disampaikan kepada pihak berwenang.</div>
+<div class="term"><strong>Tanggung jawab</strong><br>Kesadaran melaksanakan kewajiban dan menerima konsekuensi tindakan.</div>
+</div>
+</section>
+
+<section class="container" id="refleksi">
+<div class="section-head"><h2>Pertanyaan Reflektif</h2><p>Pertanyaan berikut dapat digunakan untuk diskusi dan refleksi pribadi.</p></div>
+<div class="reflection">
+<div class="question"><strong>01. Perbedaan Pendapat</strong>Bagaimana cara kamu menerapkan nilai Demokrasi Pancasila ketika terjadi perbedaan pendapat dalam kelompok atau kelas?</div>
+<div class="question"><strong>02. Kebebasan dan Tanggung Jawab</strong>Mengapa kebebasan menyampaikan pendapat harus disertai dengan tanggung jawab, terutama di media sosial?</div>
+<div class="question"><strong>03. Musyawarah</strong>Menurut pengalamanmu di sekolah, situasi apa yang paling membutuhkan musyawarah dan bagaimana seharusnya proses pengambilan keputusannya?</div>
+</div>
+</section>
+
+<footer>
+<strong>MODUL PPKn KELAS XI — DEMOKRASI PANCASILA</strong><br>
+Belajar memahami demokrasi, berlatih bertanggung jawab, dan menghargai perbedaan.
+</footer>
+</body>
+</html>'''
+
